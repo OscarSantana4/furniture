@@ -1,0 +1,12 @@
+<IfModule authz_core_module>
+    Allow from all
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /subdirectory/index.php/$1 [L]
+RewriteCond $1 !^(index\.php|includes|theme|media|robots\.txt|fonts)

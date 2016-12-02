@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class = "ie7"><![endif]-->
+<!--[if IE 8]><html class = "ie8"><![endif]-->
+<!--[if IE 9]><html class = "ie9"><![endif]-->
+<!--[if !(IE 7) | !(IE 8) | !(IE 9) ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<title>Opening - Job Board HTML Template</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+<script type="text/javascript" src="js/script.js" ></script>
+<!--[if IE]><script src="js/html5.js"></script><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
+</head>
+<body>
+<div class="wrapper add-opening-page">
+  <header>
+    <div class="site-header">
+      <div class="site-title"><a href="home_v.1.html"><img src="images/logo.png" alt="*" /></a>
+        <h1><a href="home_v.1.html">Opening</a></h1>
+      </div>
+      <!-- .site-title -->
+      <nav class="site-nav">
+        <ul>
+          <li ><a href="home_v.1.html">Home</a>
+            <ul class="sub-menu">
+              <li><a href="home_v.1.html">Home 1</a></li>
+              <li><a href="home_v.2.html">Home 2</a></li>
+              <li><a href="home_v.3.html">Home 3</a></li>
+            </ul>
+          </li>
+          <li class="current_page_item"><a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="opening.html">Opening</a></li>
+              <li class="current_page_item"><a href="add_opening.html">Add Opening</a></li>
+              <li><a href="company_profile.html">Company Profile</a></li>
+              <li><a href="company_profile_settings.html">Company Profile Settings</a></li>
+              <li><a href="search_results_left_aside.html">Search Results Left Aside</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- .site-nav -->
+      <div class="user-area"><img class="avatar" alt="Avatar" src="images/avatar.png" />
+        <p>Hi, <span>John</span>!</p>
+        <ul class="user-options">
+          <li><a href="user_profile_settings.html">User Profile Settings</a></li>
+          <li><a href="sign_in.html">Sign In</a></li>
+          <li><a href="sign_up.html">Sign Up</a></li>
+          <li><a href="reset_password.html">Reset Password</a></li>
+        </ul>
+        <!-- .user-options -->
+      </div>
+      <!-- .user-area -->
+    </div>
+    <!-- .site-header -->
+  </header>
+  <!-- header -->
+  <div class="main clearfix">
+    <div class="content">
+      <div class="warning">
+        <p><span>Warning!</span><br />
+          Available only to registered companies. Create a profile of the company and get the opportunity to job posting.</p>
+      </div>
+      <!-- .warning -->
+      <form method="post" action="http://bestwebholding.com/demo_theme/opening-job-board-html-template/add_opening.html">
+        <div class="post add-opening">
+          <div class="post-header">
+            <h2>Opening details</h2>
+          </div>
+          <!-- .post-header -->
+          <ul>
+            <li class="settings-field">
+              <input name="opening" required type="text" placeholder="Opening" />
+              <label>
+                <input class="dark" name="filter" type="radio" />
+                Full-time</label>
+              <label>
+                <input class="dark" name="filter" type="radio" />
+                Contract</label>
+              <label>
+                <input class="dark" checked name="filter" type="radio" />
+                Freelance</label>
+            </li>
+            <!-- .settings-field -->
+            <li class="settings-field">
+              <textarea name="responsibilities" required placeholder="Responsibilities"></textarea>
+            </li>
+            <!-- .settings-field -->
+            <li class="settings-field">
+              <textarea name="experience" rows="3" required placeholder="Experience"></textarea>
+            </li>
+            <!-- .settings-field -->
+            <li class="settings-field">
+              <input name="conditions" required type="text" placeholder="Conditions" />
+            </li>
+            <!-- .settings-field -->
+            <li class="settings-field">
+              <input name="location" required type="text" placeholder="Location" />
+            </li>
+            <!-- .settings-field -->
+            <li id="contacts" class="settings-field">
+              <input name="email" required type="email" placeholder="cv@envato.com" />
+              <input name="phone" required type="text" placeholder="+1 (555) 333 - 55 - 33" />
+            </li>
+            <!-- .settings-field -->
+          </ul>
+          <div class="post-footer"><a class="edit-link" href="#">[Edit]</a></div>
+          <!-- .post-footer -->
+        </div>
+        <input type="submit" value="save" />
+        <input type="reset" value="cancel" />
+      </form>
+      <!-- search form -->
+    </div>
+    <!-- .content -->
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Text widget</h3>
+        <p>Proin at risus augue. Proin sapien est, convallis vitae ligula vitae, fermentum viverra erat.</p>
+      </div>
+      <!-- .widget -->
+      <div class="widget company-widget">
+        <h3>My company profile</h3>
+        <div class="company-meta"><img src="images/featured-company.png" alt="Company" />
+          <div class="count">21</div>
+          <p class="company-location">New York</p>
+          <a class="company-link" href="http://envato.com/">http://envato.com/</a>
+          <p class="description">Our company is constantly developing, we provide high_quality web and mobile applications and websites for companies from all over the world.</p>
+        </div>
+        <!-- .company-meta -->
+        <div class="contacts">
+          <ul class="phones">
+            <li>+1 (555) 333 - 55 - 33</li>
+            <li>+1 (000) 777 - 66 - 77</li>
+          </ul>
+          <ul class="emails">
+            <li>cv@envato.com</li>
+            <li>info@envato.com</li>
+          </ul>
+        </div>
+        <!-- .contacts -->
+      </div>
+      <!-- .company-widget -->
+    </aside>
+    <!-- .sidebar -->
+  </div>
+  <!-- .main -->
+  <footer>
+    <div class="site-footer">
+      <div class="site-title"><a href="home_v.1.html"><img src="images/logo.png" alt="*" /></a>
+        <h1><a href="home_v.1.html">Opening</a></h1>
+      </div>
+      <!-- .site-title -->
+      <nav class="site-nav">
+        <ul>
+          <li><a href="http://bestwebsoft.com/about/">About</a></li>
+          <li><a href="http://bestwebsoft.com/plugin/">Products</a></li>
+          <li><a href="http://support.bestwebsoft.com/">Support Forum</a></li>
+        </ul>
+      </nav>
+      <!-- .site-nav -->
+      <div class="links"><a class="facebook" href="https://www.facebook.com/bestwebsoft"></a><a class="twitter" href="https://twitter.com/bestwebsoft"></a><a class="youtube" href="http://www.youtube.com/bestwebsoft"></a></div>
+      <!-- .linls -->
+    </div>
+    <!-- .site-footer -->
+  </footer>
+  <!-- footer -->
+</div>
+<!-- .wrapper -->
+</body>
+</html>
